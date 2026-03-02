@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/goondlasuresh/Developer/Bits/bit_manipulation2'
+relocations:     []
+...

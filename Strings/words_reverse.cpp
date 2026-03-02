@@ -9,7 +9,7 @@ int main()
 
     int start = 0;
 
-    for (int end = 0; end <= str.size(); end++)
+    for (int end = 1; end <= str.size(); end++)
     {
         if (str[end] == ' ' || end == str.size())
         {
