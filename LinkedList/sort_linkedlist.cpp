@@ -50,29 +50,7 @@ public:
             cout << temp->data << "->";
             temp = temp->next;
         }
-        cout << "nullptr\n";
-    }
-
-    void reverse()
-    {
-        if (head == nullptr || head->next == nullptr)
-        {
-            return;
-        }
-
-        Node *prev = nullptr;
-        Node *curr = head;
-        Node *next = nullptr;
-
-        while (curr != nullptr)
-        {
-            next = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = next;
-        }
-
-        head = prev;
+        cout << "nullptr!\n";
     }
 
     void sort()
@@ -82,14 +60,14 @@ public:
             return;
         }
 
-        Node *sortNode = nullptr; 
+        Node *sortNode = nullptr;
         Node *curr = head;
         Node *next = nullptr;
 
         while (curr != nullptr)
         {
             next = curr->next;
-            
+
             if (sortNode == nullptr || sortNode->data > curr->data)
             {
                 curr->next = sortNode;
@@ -116,15 +94,11 @@ int main()
 {
     LinkedList ll;
 
+    ll.insert(5);
     ll.insert(1);
     ll.insert(2);
-    ll.insert(3);
     ll.insert(4);
-    ll.insert(5);
-    ll.traversal();
-
-    ll.reverse();
-    ll.traversal();
+    ll.insert(3);
 
     ll.sort();
     ll.traversal();

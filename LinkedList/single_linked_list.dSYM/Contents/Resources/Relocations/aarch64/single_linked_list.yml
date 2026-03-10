@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/goondlasuresh/Dev/LinkedList/single_linked_list'
+binary-path:     '/Users/goondlasuresh/Developer/LinkedList/single_linked_list'
 relocations:     []
 ...
